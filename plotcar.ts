@@ -300,10 +300,10 @@ function  moter(kyori:number,R_zengo:number,L_zengo:number){
     for (let index = 0; index < 3; index++) {
     let Data1=0;
     while ( Data1 < 4){
-      pins.digitalWritePin(DigitalPin.P1, Stepping_R[Data1][0]);
-      pins.digitalWritePin(DigitalPin.P2, Stepping_R[Data1][1]);
+      pins.digitalWritePin(DigitalPin.P2, Stepping_R[Data1][0]);
+      pins.digitalWritePin(DigitalPin.P12, Stepping_R[Data1][1]);
       pins.digitalWritePin(DigitalPin.P9, Stepping_R[Data1][2]);
-      pins.digitalWritePin(DigitalPin.P12, Stepping_R[Data1][3]);
+      pins.digitalWritePin(DigitalPin.P1, Stepping_R[Data1][3]);
       Data1=Data1+1;
       for (i = 0; i < microbit_wait; i++);
       {
@@ -337,13 +337,13 @@ function  moter(kyori:number,R_zengo:number,L_zengo:number){
     let Data1=0;
     while ( Data1 < 4){
 
-      pins.digitalWritePin(DigitalPin.P1, Stepping_R[Data1][0]);
+      pins.digitalWritePin(DigitalPin.P2, Stepping_R[Data1][0]);
       pins.digitalWritePin(DigitalPin.P13, Stepping_L[Data1][0]);
-      pins.digitalWritePin(DigitalPin.P2, Stepping_R[Data1][1]);
+      pins.digitalWritePin(DigitalPin.P12, Stepping_R[Data1][1]);
       pins.digitalWritePin(DigitalPin.P14, Stepping_L[Data1][1]);
       pins.digitalWritePin(DigitalPin.P9, Stepping_R[Data1][2]);
       pins.digitalWritePin(DigitalPin.P15, Stepping_L[Data1][2]);
-      pins.digitalWritePin(DigitalPin.P12, Stepping_R[Data1][3]);
+      pins.digitalWritePin(DigitalPin.P1, Stepping_R[Data1][3]);
       pins.digitalWritePin(DigitalPin.P16, Stepping_L[Data1][3]);
       Data1=Data1+1;
       for (i = 0; i < microbit_wait; i++);
@@ -357,13 +357,13 @@ function  moter(kyori:number,R_zengo:number,L_zengo:number){
     let Data1=0;
     while ( Data1 < Step_number){
       serial.writeValue("Data1", Data1);
-      pins.digitalWritePin(DigitalPin.P1, Stepping_R[Data1][0]);
+      pins.digitalWritePin(DigitalPin.P2, Stepping_R[Data1][0]);
       pins.digitalWritePin(DigitalPin.P13, Stepping_L[Data1][0]);
-      pins.digitalWritePin(DigitalPin.P2, Stepping_R[Data1][1]);
+      pins.digitalWritePin(DigitalPin.P12, Stepping_R[Data1][1]);
       pins.digitalWritePin(DigitalPin.P14, Stepping_L[Data1][1]);
       pins.digitalWritePin(DigitalPin.P9, Stepping_R[Data1][2]);
       pins.digitalWritePin(DigitalPin.P15, Stepping_L[Data1][2]);
-      pins.digitalWritePin(DigitalPin.P12, Stepping_R[Data1][3]);
+      pins.digitalWritePin(DigitalPin.P1, Stepping_R[Data1][3]);
       pins.digitalWritePin(DigitalPin.P16, Stepping_L[Data1][3]);
       Data1=Data1+1;
       for (i = 0; i < microbit_wait; i++);
