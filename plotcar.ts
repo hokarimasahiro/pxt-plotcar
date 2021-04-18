@@ -181,7 +181,7 @@ namespace eureka_plotter_car {
 
 
 function  moter(kyori:number,R_zengo:number,L_zengo:number){
-    led.enable(false);
+//    led.enable(false);
     let i=0;
     /* 端数の計算計算  */
 
