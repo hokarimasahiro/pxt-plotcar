@@ -309,7 +309,8 @@ function  moter(kyori:number,R_zengo:number,L_zengo:number){
       pins.digitalWritePin(DigitalPin.P1, Stepping_R[Data1][3]);
       Data1=Data1+1;
 //      control.waitMicros(2000)
-      basic.pause(2)
+//      basic.pause(2)
+      step_wait();
       }
     }
     }
@@ -327,7 +328,8 @@ function  moter(kyori:number,R_zengo:number,L_zengo:number){
       pins.digitalWritePin(DigitalPin.P16, Stepping_L[Data1][3]);
       Data1=Data1+1;
 //      control.waitMicros(2000)
-      basic.pause(2)
+//      basic.pause(2)
+      step_wait();
       }
     }
     }
@@ -348,7 +350,8 @@ function  moter(kyori:number,R_zengo:number,L_zengo:number){
       pins.digitalWritePin(DigitalPin.P16, Stepping_L[Data1][3]);
       Data1=Data1+1;
 //      control.waitMicros(2000)
-      basic.pause(2)
+//      basic.pause(2)
+      step_wait();
       }
     }
 
@@ -367,7 +370,8 @@ function  moter(kyori:number,R_zengo:number,L_zengo:number){
       pins.digitalWritePin(DigitalPin.P16, Stepping_L[Data1][3]);
       Data1=Data1+1;
 //      control.waitMicros(2000)
-      basic.pause(2)
+//      basic.pause(2)
+      step_wait();
       }
     
         Tugi_L=(Tugi_L + Data1-1)%4; 
