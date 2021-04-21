@@ -178,7 +178,10 @@ namespace eureka_plotter_car {
     }
   }
 
-
+function step_wait() {
+//    basic.pause(2)
+    control.waitMicros(2000)
+}
 
 function  moter(kyori:number,R_zengo:number,L_zengo:number){
 //    led.enable(false);
